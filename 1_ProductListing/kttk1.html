@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d9bdf04.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #bot {
+            width: 1440px;
+            height: 2820px;
+        }
+        
+        #menu-container {
+            display: flex;
+            height: 60px;
+            /*trên cùng 1 hàng ngang */
+            justify-content: space-evenly;
+            /*dàn ra đều */
+            align-items: center;
+            /* chỉnh vào trung tâm */
+        }
+        
+        #left {
+            display: flex;
+            width: 250px;
+            justify-content: space-around;
+            padding-left: 50px;
+        }
+        
+        #right {
+            display: flex;
+            width: 380px;
+            justify-content: left;
+            align-items: center;
+            padding-right: 0px;
+            padding-left: 20px;
+        }
+        
+        #center {
+            width: 200px;
+            padding-left: 160px;
+            margin-top: 4px;
+        }
+        
+        .leftitem {
+            color: #60605f;
+        }
+        
+        .rightitem {
+            color: #b0b1b2;
+        }
+        
+        #search {
+            display: flex;
+            width: 200px;
+            height: 32px;
+            border: 1px solid rgb(101, 95, 95);
+            border-radius: 6px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        input[type=text] {
+            border-style: hidden;
+            color: white;
+        }
+        
+        #backgr {
+            background-image: url(lable1.png);
+            width: 1440px;
+            height: 390px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 0px;
+            display: inline-block;
+        }
+        
+        #backg {
+            width: 500px;
+            position: relative;
+            top: 54px;
+            left: 145px;
+            color: #60605f;
+        }
+        
+        #menu-mid {
+            display: flex;
+            height: 175px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #menu-type-mid {
+            width: 1215px;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #item-midleft {
+            width: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .item-mid {
+            width: 230px;
+            border-radius: 5px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        #search-1 {
+            display: flex;
+            width: 430px;
+            height: 40px;
+            border-radius: 5px;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 240px;
+        }
+        
+        #img {
+            display: flex;
+            height: 1600px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #img-type {
+            width: 1215px;
+            height: 1600px;
+        }
+        
+        .img-layout {
+            height: 535px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .img-1 {
+            display: inline-block;
+            position: relative;
+            height: 500px;
+            width: 265px;
+        }
+        
+        .notice {
+            position: absolute;
+            border: 1 solid #ffc970;
+            background-color: #ffc970;
+            border-radius: 40px;
+            right: 10px;
+            top: 0px;
+            font-size: 14px;
+            padding: 7px;
+            color: #97671a;
+        }
+        
+        .dola {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #number {
+            display: flex;
+            height: 160px;
+            justify-content: space-around;
+        }
+        
+        #number-text {
+            width: 270px;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            margin-top: 25px;
+        }
+        
+        #nb {
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #end {
+            display: flex;
+            height: 430px;
+            justify-content: center;
+            align-items: center;
+            background: #191c23;
+        }
+        
+        #end-box {
+            display: flex;
+            width: 1160px;
+            background: #191c23;
+            justify-content: space-between;
+        }
+        
+        #end-text {
+            display: flex;
+            width: 500px;
+            height: 300px;
+            color: white;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        #end-left {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        
+        #end-right {
+            width: 425px;
+            color: white;
+        }
+        
+        input[type=email] {
+            border-style: hidden;
+            color: white;
+        }
+        
+        input[type=submit] {
+            border-style: hidden;
+            color: white;
+        }
+        
+        #email {
+            width: 440px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+        
+        #logo-end {
+            display: flex;
+            width: 140px;
+            justify-content: space-around;
+            align-items: start;
+            margin-top: 35px;
+        }
+        
+        #e {
+            display: flex;
+            height: 70px;
+            width: 350px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="bot">
+        <div id="menu-container">
+            <div id="left">
+                <div class="leftitem">Shop</div>
+                <div class="leftitem">Offers</div>
+                <div class="leftitem">Out Story</div>
+                <div class="leftitem">Blog</div>
+            </div>
+            <div id="center">
+                <img src="logo.png" alt="">
+            </div>
+            <div id="right">
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(205, 189, 172); font-size: 13px; text-align: center;"></i>
+                    <input type="text" size="20px" placeholder="Search product...">
+                </div>
+                <div class="rightitem">
+                    <a href="#"><img src="But.png" alt="" height="125%"></a>
+                </div>
+                <div class="rightitem">
+                    <a href="#"><img src="Butt.png" alt="" height="125%"></a>
+                </div>
+            </div>
+        </div>
+        <div id="backgr">
+            <div id="backg">
+                <h1 style="font-size: 60px;margin-bottom: 0px;">Gift for your skin</h1>
+                <p style="display: inline-block; font-size: 22px;width: 480px;margin-top: 5px;">Aliquip fuglat ipsum nostrud ex et eu icididunt quis minim dolore excepteur voluptate</p>
+            </div>
+        </div>
+        <div id="menu-mid">
+            <div id="menu-type-mid">
+                <div id="item-midleft">
+                    <div class="item-mid" style="background: rgb(86, 243, 246);color: white;">
+                        <h3>All Product</h3>
+                    </div>
+                    <div class="item-mid" style="color: rgb(86, 243, 246);">
+                        <h3>Face</h3>
+                    </div>
+                    <div class="item-mid" style="color: rgb(86, 243, 246);">
+                        <h3>Body</h3>
+                    </div>
+                </div>
+                <div id="item-midright">
+                    <div id="search-1">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #7e7979;font-size: 18px;text-align: center;"></i>
+                        <input type="text" size="58px" placeholder="Search product...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="img">
+            <div id="img-type">
+                <div class="img-layout">
+                    <div class="img-1">
+                        <div>
+                            <img src="Image1.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">Best-seller</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px; color:#3d4044;height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$32</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$42</p>
+
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image2.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">Best-seller</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$22</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$28</p>
+
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image3.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">Best-seller</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$18</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$26</p>
+
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image4.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">Best-seller</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$48</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$56</p>
+
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-layout">
+                    <div class="img-1">
+                        <div>
+                            <img src="Image5.png" alt="" style="border-radius: 10px;">
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$31</h4>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image6.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">New</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$40</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$48</p>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image7.png" alt="" style="border-radius: 10px;">
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$26</h4>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image8.png" alt="" style="border-radius: 10px;">
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$18</h4>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-layout">
+                    <div class="img-1">
+                        <div>
+                            <img src="Image9.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">New</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$52</h4>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image10.png" alt="" style="border-radius: 10px;">
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$47</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$42</p>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image11.png" alt="" style="border-radius: 10px;">
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$44</h4>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-1">
+                        <div>
+                            <img src="Image12.png" alt="" style="border-radius: 10px;">
+                            <p class="notice">New</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 20px;color:#3d4044; height: 0px;">Product title</h4>
+                            <p style="color: #3d4044;">Labore sint ipsum dolore molilit</p>
+                        </div>
+                        <div class="dola">
+                            <div>
+                                <h4 style="display: inline-block; font-size: 35px;margin:0px 0px;color:#3d4044;width: fit-content;">$32</h4>
+                                <p style=" display: inline-block; color: #afb2ba; width: fit-content;margin: 0px 10px;">$42</p>
+                            </div>
+                            <div>
+                                <img src="Button.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="number">
+            <div id="number-text">
+                <img src="left.png" alt="" style="margin-top: 9px;">
+                <div id="nb">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <img src="right.png" alt="" style="margin-top: 9px;">
+            </div>
+        </div>
+        <div id="end">
+            <div id="end-box">
+                <div id="end-left">
+                    <div id="end-text">
+                        <div>
+                            <h3><b>About</b></h3>
+                            <p>Home</p>
+                            <p>Shop</p>
+                            <p>Our story</p>
+                            <p>Blogs</p>
+                            <select name="" id="" style="width: 130px; height: 33px;border-radius: 5px;background: #191c23;color: white;">
+                                <option value="" style="color: white;">English</option>
+                                <option value="" style="color: white;">VietNames</option>
+                                <option value="" style="color: white;">ThaiLan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h3><b>Help</b></h3>
+                            <p>Shipping & Returns</p>
+                            <p>Track Order</p>
+                            <p>FAQs</p>
+                        </div>
+                        <div>
+                            <h3><b>Contract</b></h3>
+                            <p>Phone:</p>
+                            <p>(+1)123 456 789</p>
+                            <p>Email:</p>
+                            <p>name@email.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="end-right">
+                    <div id="end-input" style="margin-top: 0px;">
+                        <div style="height: 85px;margin-top: 0px;">
+                            <h1 style="height: 30px;"><b>Receive new promotions</b></h1>
+                            <p style="margin-top: 0px;">Duis ea tempor commodo amet reprehende</p>
+                        </div>
+                        <div id="email">
+                            <input type="email" placeholder="Input your email" style="border-radius: 10px;width: 311px;height: 50px;background: #191c23;color: rgb(255, 255, 255);">
+                            <input type="submit" value="Subscribe" style="height: 55px;width: 120px;border-radius: 10px;background: rgb(14, 158, 93);">
+                        </div>
+                    </div>
+                    <div id="logo-end">
+                        <img src="Twitter.png" alt="">
+                        <img src="Facebook.png" alt="">
+                        <img src="LinkedIn.png" alt="">
+                        <img src="YouTube.png" alt="">
+                    </div>
+                    <div id="e">
+                        <p>&#169; 2022 Brand, Inc.</p>
+                        <p>&#149; Privacy</p>
+                        <p>&#149; Terms</p>
+                        <p>&#149; Sitemap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
