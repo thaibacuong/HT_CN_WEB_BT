@@ -1,0 +1,275 @@
+#wrapper {
+    width: 1440px;
+    height: 900px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 900px;
+}
+
+#center {
+    width: 920px;
+    border: 1px solid rgb(207, 204, 204);
+    background-color: rgb(255, 255, 255);
+}
+
+#right {
+    width: 455px;
+    background-color: rgb(255, 255, 255);
+}
+
+#left {
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left_above {
+    width: 100%;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.item {
+    width: 35px;
+}
+
+#setting {
+    margin-top: 25px;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+
+#box-center {
+    width: 830px;
+}
+
+#center-1 {
+    width: 830px;
+    height: 155px;
+}
+
+#box-1 {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#time {
+    height: 35px;
+    width: 75px;
+    border-radius: 20px;
+    border: 1px solid red;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+#internal {
+    width: 82px;
+    height: 26px;
+    color: white;
+    border-radius: 100px;
+    background: rgb(242, 85, 98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user {
+    width: 15px;
+    margin-left: 10px;
+}
+
+#box-2 {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+}
+
+#date {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#center-2 {
+    display: flex;
+    height: 458px;
+    background-image: url(img/img_big.png);
+    justify-content: center;
+}
+
+#img-top {
+    width: 790px;
+    margin-top: 15px;
+    height: 40px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#bc {
+    display: flex;
+    border-radius: 5px;
+    width: 158px;
+    height: 40px;
+    background-color: rgb(118, 110, 110);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#center-3 {
+    height: 262px;
+}
+
+#img-item {
+    margin-top: 25px;
+    width: 830px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-1 {
+    width: 245px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#img-end-1 {
+    display: flex;
+    height: 160px;
+    width: 261px;
+    border-radius: 10px;
+    background-image: url(img/img2.png);
+    justify-content: center;
+}
+
+#img-end-2 {
+    display: flex;
+    width: 261px;
+    height: 160px;
+    border-radius: 10px;
+    background-image: url(img/img1.png);
+    justify-content: center;
+}
+
+#img-end-3 {
+    display: flex;
+    width: 261px;
+    height: 160px;
+    border-radius: 10px;
+    background-image: url(img/img.png);
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    border-radius: 5px;
+    width: 105px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.458);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#center-end {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_end {
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right-top {
+    display: flex;
+    height: 322px;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-top-1 {
+    width: 385px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Add {
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: red;
+}
+
+#right-top-2 {
+    height: 205px;
+}
+
+.img-mid {
+    display: flex;
+    height: 53px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right-end {
+    display: flex;
+    height: 577px;
+    justify-content: center;
+    align-items: center;
+}
+
+#end-right {
+    width: 385px;
+    height: 555px;
+}
+
+.chat-name {
+    height: 128px;
+}
+
+#send {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
