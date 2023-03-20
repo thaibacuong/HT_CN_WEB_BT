@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .body {
+            margin: 0;
+        }
+        
+        .total {
+            background: rgb(253, 198, 97);
+            width: 660px;
+            height: 500px;
+            min-height: 135vh;
+            margin: 0px auto;
+            position: relative;
+        }
+        
+        .box-conten {
+            width: 634px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+        }
+        
+        .box-form {
+            width: 600px;
+            position: absolute;
+            top: 110px;
+            left: 20px;
+        }
+    </style>
+    <form action="/action_page.php">
+        <div class="total">
+            <h1 style="text-align: center;">Survey Form</h1>
+            <div class="box-conten">
+                <p>If you are interested in purchasing one or more of our products. before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly
+                    confidential. Thank you very much for your time!</p>
+            </div><br>
+            <div class="box-form">
+                <ol type="1">
+                    <li>
+                        <label for="name">What is your name?</label> <br>
+                        <input type="text" id="name" style="width: 200px;">
+                    </li><br>
+                    <li><label for="date">What is your date of birth?</label> <br>
+                        <input type="date" id="date">
+                    </li><br>
+                    <li>
+                        <label for="address">What is your mailing add ress (if you would like to have a hard copy of of our catalog sent to you)?</label><br>
+                        <textarea name="" id="address" cols="50" rows="5"></textarea>
+                    </li><br>
+                    <li>
+                        <label for="emailadd">What is your email address?</label><br>
+                        <input type="text" id="emailadd" style="width: 150px;">
+                    </li><br>
+                    <li>
+                        <label for="catalog">Have you viewed our online product catalog?</label><br>
+                        <div id="catalog">
+                            <input type="radio" id="yes" name="elect" value="Yes">
+                            <label for="yes">Yes</label> <br>
+                            <input type="radio" name="elect" id="no">
+                            <label for="no">No</label>
+                        </div>
+                    </li><br>
+                    <li>
+                        <label for="apply">If so, what product(), besides the one you are ordering, might you be interested in purchasing in th future? (check all that apply)</label>
+                        <div id="apply">
+                            <input type="checkbox" name="pd" id="VCR">
+                            <label for="VCR">VCR</label><br>
+                            <input type="checkbox" name="pd" id="TV">
+                            <label for="TV">Big Screen TV</label><br>
+                            <input type="checkbox" name="pd" id="Audio">
+                            <label for="Audio">Audio Equipment</label><br>
+                            <input type="checkbox" name="pd" id="VD">
+                            <label for="VD">Video Equipment</label><br>
+                            <input type="checkbox" name="pd" id="cam">
+                            <label for="cam">Camera Equipment</label><br>
+                            <input type="checkbox" name="pd" id="Other">
+                            <label for="Other">Other</label>
+                            <input type="text" placeholder="Please List:">
+                        </div>
+                    </li><br>
+                    <li>
+                        <label for="poser">Do you have any questions comments or suggestions before proceeding to the Order Form?</label><br>
+                        <textarea name="" id="" cols="40" rows="6"></textarea>
+                    </li>
+                </ol>
+                <div id="end" style="text-align: center;">
+                    <input type="submit" value="Send Form">
+                    <input type="submit" value="Clear Form">
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

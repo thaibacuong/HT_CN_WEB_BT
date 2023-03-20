@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel reservation form</h1>
+        <br>
+        <h2>* denotes mandotory</h2>
+        <form action="">
+            <label for="Fullname">Full name*:</label><br>
+            <input type="text" id="Fullname" required placeholder="FirstName LastName"><br>
+            <label for="emailadd">Email address*:</label><br>
+            <input type="email" id="emailadd" required placeholder="EMAIL_ADDRESS"><br>
+            <label for="selest">select tour package*:</label><br>
+            <select name="" id="selest">
+                <option value="" id="choes">Goa</option>
+                <option value="" id="choes">good</option><br>
+            </select><br>
+            <label for="arrivaldate">Arrival date*:</label><br>
+            <input type="date" id="arrivaldate" required><br>
+            <label for="persons">Number of persons*:</label><br>
+            <input type="number" id="persons" required placeholder="UNKNOWN TYPE"><br>
+            <label for="avail">What would you want to avail*:</label><br>
+            <div id="avail">
+                <label for="boarding">Boarding</label>
+                <input type="checkbox" id="boarding"><br>
+                <label for="fooding">Fooding</label>
+                <input type="checkbox" id="fooding"><br>
+                <label for="sight">Sight seeing</label>
+                <input type="checkbox" id="sight"><br>
+            </div>
+            <label for="Discout">Discout Coupon code*:</label><br>
+            <input type="number" id="Discout" required placeholder="UNKNOWN TYPE"><br>
+            <label for="teams">Tems and conditions*:</label><br>
+            <div id="teams">
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree</label>
+                <input type="checkbox" id="disagree">
+                <label for="disagree">I disagree</label>
+            </div>
+            <input type="submit" value="complete reservation">
+        </form>
+    </div>
+
+</body>
+
+</html>
