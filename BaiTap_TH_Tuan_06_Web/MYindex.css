@@ -1,0 +1,362 @@
+#product {
+    width: 1440px;
+    height: 2652px;
+}
+
+#container {
+    width: 1440px;
+    height: 2652px;
+}
+
+#menu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.549);
+}
+
+#menu_chone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 435px;
+    margin-left: 30px;
+}
+
+#menu_logo {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_search {
+    width: 475px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 335px;
+}
+
+#seaech {
+    width: 335px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: rgba(181, 179, 179, 0.242);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#center {
+    width: 100%;
+    height: 2025px;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.549);
+    display: flex;
+    justify-content: center;
+}
+
+#center_top {
+    width: 1180px;
+    height: 2028px;
+}
+
+#center_title {
+    width: 100%;
+    height: 188px;
+}
+
+#title {
+    height: 70px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.share_seve {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title_end {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#center_img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_box {
+    display: flex;
+    justify-content: space-between;
+    width: 582px;
+}
+
+#center_description {
+    width: 100%;
+    height: 465px;
+    display: flex;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.549);
+}
+
+#box_description {
+    width: 100%;
+    height: 390px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#description_text {
+    width: 770px;
+    margin-left: 3px;
+}
+
+.img-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img_description {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+}
+
+#text_img {
+    width: 365px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#buy {
+    width: 338px;
+    height: 390px;
+    border-radius: 5px;
+    border: 1px solid rgba(172, 157, 157, 0.259);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy_now {
+    width: 302px;
+    height: 350px;
+}
+
+#form {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.chon select {
+    width: 302px;
+    background-color: rgba(227, 223, 223, 0.499);
+    border: 1px solid rgba(228, 220, 220, 0.499);
+    border-radius: 3px;
+    height: 35px;
+}
+
+#buy_total {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submit {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.type_submit {
+    width: 100%;
+}
+
+#to_cart {
+    width: 100%;
+    height: 43px;
+    color: rgba(63, 104, 228, 0.858);
+    background-color: white;
+    border: 1px solid rgba(40, 143, 246, 0.66);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#reviews {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(228, 220, 220, 0.499);
+}
+
+#final_box {
+    width: 100%;
+    height: 330px;
+}
+
+#final_img {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#reviews_box {
+    height: 225px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_left {
+    width: 575px;
+    height: 100%;
+}
+
+.reviews_aclone {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#center_end {
+    width: 100%;
+    height: 555px;
+    display: flex;
+    align-items: center;
+}
+
+#atiem_end {
+    width: 100%;
+    height: 535px;
+}
+
+#end_c_text {
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#end_c_img {
+    width: 100%;
+    height: 355px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_aclone {
+    width: 280px;
+    height: 100%;
+    border-radius: 5px;
+    border: 1.5px solid rgba(228, 220, 220, 0.499);
+}
+
+.text-1 {
+    width: 280px;
+    height: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.text-2 {
+    width: 245px;
+    height: 76px;
+}
+
+#final {
+    width: 100%;
+    height: 565px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#final_prgram {
+    width: 1180px;
+    height: 510px;
+}
+
+#final_logo {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#final_text {
+    height: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#final_email {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#item_email {
+    width: 375px;
+    height: 40px;
+    background-color: rgba(139, 131, 131, 0.297);
+    border-radius: 5px;
+}
+
+#final_log {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#log-1 {
+    width: 730px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.log_text {
+    width: 150px;
+    height: 100%;
+}
+
+#final_end {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
