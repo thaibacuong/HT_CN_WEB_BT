@@ -1,0 +1,146 @@
+.clock {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: rgb(231, 192, 192);
+    position: relative;
+}
+
+.hour {
+    position: absolute;
+    width: 2px;
+    /* Thu nhỏ độ rộng của kim */
+    height: 35%;
+    /* Thu nhỏ chiều dài của kim */
+    transform-origin: bottom center;
+    /* Đặt gốc tọa độ của kim ở giữa dưới */
+}
+
+.minute {
+    position: absolute;
+    width: 2px;
+    /* Thu nhỏ độ rộng của kim */
+    height: 40%;
+    /* Thu nhỏ chiều dài của kim */
+    transform-origin: bottom center;
+    /* Đặt gốc tọa độ của kim ở giữa dưới */
+}
+
+.second {
+    position: absolute;
+    width: 2px;
+    /* Thu nhỏ độ rộng của kim */
+    height: 48%;
+    /* Thu nhỏ chiều dài của kim */
+    transform-origin: bottom center;
+    /* Đặt gốc tọa độ của kim ở giữa dưới */
+}
+
+.milliseconds {
+    position: absolute;
+    width: 2px;
+    /* Thu nhỏ độ rộng của kim */
+    height: 50%;
+    /* Thu nhỏ chiều dài của kim */
+    transform-origin: bottom center;
+    /* Đặt gốc tọa độ của kim ở giữa dưới */
+}
+
+.hour {
+    background-color: rgb(173, 147, 147);
+    left: 50%;
+    top: 15%;
+    /* Đặt kim giờ vào vị trí ban đầu */
+}
+
+.minute {
+    background-color: #000;
+    left: 50%;
+    top: 10%;
+    /* Đặt kim phút vào vị trí ban đầu */
+}
+
+.second {
+    background-color: red;
+    left: 50%;
+    top: 2%;
+    /* Đặt kim giây vào vị trí ban đầu */
+}
+
+.milliseconds {
+    background-color: rgb(255, 251, 0);
+    left: 50%;
+    top: 0%;
+    /* Đặt kim giây vào vị trí ban đầu */
+}
+
+.hour-text {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.hour-1 {
+    left: calc(50% + 85px);
+    top: calc(10% - 5px);
+}
+
+.hour-2 {
+    left: calc(65% + 85px);
+    top: calc(30% - 15px);
+}
+
+.hour-3 {
+    left: calc(70% + 90px);
+    top: calc(50% - 10px);
+}
+
+.hour-4 {
+    left: calc(65% + 85px);
+    top: calc(73% - 10px);
+}
+
+.hour-5 {
+    left: calc(50% + 85px);
+    top: calc(90% - 15px);
+}
+
+.hour-6 {
+    left: calc(25% + 90px);
+    top: calc(95% - 10px);
+}
+
+.hour-7 {
+    left: calc(5% + 80px);
+    top: calc(90% - 15px);
+}
+
+.hour-8 {
+    left: calc(5% + 15px);
+    top: calc(73% - 10px);
+}
+
+.hour-9 {
+    left: calc(0% + 5px);
+    top: calc(50% - 10px);
+}
+
+.hour-10 {
+    left: calc(5% + 15px);
+    top: calc(30% - 15px);
+}
+
+.hour-11 {
+    left: calc(5% + 80px);
+    top: calc(10% - 5px);
+}
+
+.hour-12 {
+    left: calc(25% + 90px);
+    top: calc(5% - 10px);
+}
