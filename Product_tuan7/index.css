@@ -159,3 +159,102 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+#number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+}
+
+.number_1 {
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+.number_1:hover {
+    border-radius: 20px;
+    background-color: #78fbff33;
+    color: rgb(0, 145, 145);
+}
+
+.l_r:hover {
+    border-radius: 20px;
+    background-color: #78fbff33;
+    color: rgb(0, 145, 145);
+}
+
+#end-box {
+    display: flex;
+    background-color: #191c23;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+#end-text {
+    display: flex;
+    padding-left: 120px;
+    color: white;
+    margin-right: 240px;
+}
+
+#end-input {
+    color: white;
+}
+
+.chose_text {
+    padding-right: 50px;
+}
+
+.text_1 {
+    padding-top: 10px;
+}
+
+.input-group {
+    margin: 10px 0px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 0.5px solid white;
+}
+
+#email_1 {
+    background-color: #191c23;
+    border: 0px;
+    color: #3d4044;
+    font-size: 20px;
+}
+
+.glyphicon::before {
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.glyphicon {
+    padding: 20px;
+    padding-right: 8px;
+}
+
+#Subscribe .btn {
+    border-radius: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(66, 216, 148, 0.623);
+    color: white;
+    border: 0px;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.img_1 {
+    margin-right: 8px;
+}
+
+#e {
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    font-size: 13px;
+}
