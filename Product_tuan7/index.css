@@ -122,28 +122,19 @@ body {
 }
 
 #img {
-    display: flex;
-    height: 1600px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#img-type {
-    width: 1215px;
-    height: 1600px;
+    padding-left: 130px;
 }
 
 .img-layout {
-    height: 535px;
     display: flex;
-    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .img-1 {
+    padding-right: 35px;
     display: inline-block;
     position: relative;
-    height: 500px;
-    width: 265px;
 }
 
 .notice {
@@ -151,35 +142,20 @@ body {
     border: 1 solid #ffc970;
     background-color: #ffc970;
     border-radius: 40px;
-    right: 10px;
-    top: 0px;
+    right: 45px;
+    top: 10px;
     font-size: 14px;
     padding: 7px;
     color: #97671a;
+}
+
+.product_title {
+    font-size: 20px;
+    color: #3d4044;
 }
 
 .dola {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#number {
-    display: flex;
-    height: 160px;
-    justify-content: space-around;
-}
-
-#number-text {
-    width: 270px;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    margin-top: 25px;
-}
-
-#nb {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
 }
